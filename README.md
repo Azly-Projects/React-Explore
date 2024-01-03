@@ -1,1 +1,1 @@
-# TypeScript React + Vite
+# TypeScript React + Tailwind + Vite

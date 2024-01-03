@@ -7,7 +7,7 @@
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended-type-checked"
   ],
-  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "ignorePatterns": ["dist", "postcss.config.js", "tailwind.config.js"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",

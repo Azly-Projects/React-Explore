@@ -1,35 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { PlusIcon } from '@heroicons/react/16/solid';
+import Navbar from './components/navbar';
+import Content from './components/content';
+import Footer from './components/footer';
 
-function App() {
-  const [count, setCount] = useState(0);
-  
+export default function App() {
   return (
-    <>
-      <div>
-        <a href='https://vitejs.dev' target='_blank'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="flex size-full flex-col bg-zinc-800 text-white">
+      <Navbar />
+      <Content>
+        <div className="mx-20 flex">
+          <h3 className="inline-flex flex-wrap items-center text-4xl">
+            React <PlusIcon className="h-8 w-8" strokeWidth={1.2} />
+            Tailwind <PlusIcon className="h-8 w-8" strokeWidth={1.2} /> Vite
+          </h3>
+        </div>
+      </Content>
+      <Footer />
+    </div>
   );
 }
-
-export default App;
