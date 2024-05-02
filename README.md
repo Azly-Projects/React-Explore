@@ -1,4 +1,4 @@
-# React TypeScript with Vite
+# React TypeScript + Redux with Vite
 
 ## Features
 
